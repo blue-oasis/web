@@ -6,7 +6,7 @@
     <script>
         function digit8(v){ //숫자 v를 8비트 2진수로 변환
             let str = "";
-            for(let i = 0; i<8 ; v<<=1){
+            for(let i = 0; i<8 ;i++, v<<=1){
                 if((v & 0x80)) str += "1";
                 else str += "0";
             }
@@ -20,7 +20,7 @@
     <script>
         let x = 10, y = 3;
         document.write("<pre>");
-        document.write("x= " + x + "y= " + y + "<br>");
+        document.write("x= " + x + ", y= " + y + "<br>");
         document.write("x :      " + digit8(x) + "<br>");
         document.write("y :      " + digit8(y) + "<br>");
         document.write("<hr>");
