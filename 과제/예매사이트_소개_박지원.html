@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>예매사이트 소개</title>
     <style>
-       h2{ text-align: center; background-color: cadetblue;} 
+       h1{ text-align: center; background-color: rgba(25, 174, 179, 0.459);} 
 
        hr{
             background: rgb(214, 129, 129); height: 5px; border: 0px; width: 800px;
@@ -16,6 +16,13 @@
            text-align: center;
        }
 
+       table {
+        margin-left:auto; 
+        margin-right:auto;
+        width: 500px;
+        font-size: large;
+        }
+
        #fixed{
             position: fixed;
             bottom: 10px;
@@ -23,17 +30,17 @@
             width: 50px;
             padding: 10px;
             background: rgb(252, 250, 250);
-            color: rgb(13, 184, 141);
+            color: rgb(8, 138, 138);
             border-color: rgb(6, 207, 197);
             
         }
 
-        summary{
-            text-size-adjust: 20px;
+        #sm{
+            font-size: x-large; background-color: rgba(95, 158, 160, 0.616);
         }
 
         #pSt{
-            background-color: aliceblue;
+            background-color: rgb(240, 255, 252);
         }
 
     </style>
@@ -42,18 +49,6 @@
             window.open(URL, "myWin", "left=300,top=300,width=400,height=300");
         }
 
-        function fucSet(){
-            var obj = document.getElementById('divF');
-
-            obj.scrollTop = 500;
-            obj.scrollLeft = 200;
-            obj.style.height = 240;
-            dbj.style.width = 220;
-        }
-
-        function up(){
-            document.documentElement.scrollTop = 320;
-        }
         //특정 위치로 스크롤 이동
         var menuHeight = document.querySelector(".menu").offsetHeight;
 
@@ -61,83 +56,127 @@
 
         window.scrollTo({top:location - menuHeight, behavior:'smooth'}); //smooth 애니메이션 적용
 
+        function move(name){ //수정필요
+            let location = document.querySelector('#' + name).offsetTop;
+            let menuHeight = document.querySelector(".menu").offsetHeight; 
+            window.scrollTo({top:location - menuHeight, behavior:'smooth'});
+        }
         
     </script>
 </head>
 <body style="background-color: rgb(208, 241, 229);" up()>
     
-    <h2 id="move">예매사이트 추천 Best3</h2>
-    <hr>
+    <h1 id="move">예매사이트 추천 Best3</h1>
    
     <div>
     <a href="javascript:load('http://ticket.interpark.com')"><img src="img/인터파크로고.png" title="클릭시 새창에서 이동"></a>
-    <br> 
-    <iframe src="http://ticket.interpark.com" name="upper" width="1800" height="400" frameborder="0">인터파크 홈페이지</iframe> <br>
+    <hr>
+    <iframe src="http://ticket.interpark.com" name="upper" width="1800" height="500" frameborder="0">인터파크 홈페이지</iframe> <br>
     
     <details>
-        <summary><b>인터파크</b></summary>
-        <p id="pSt">티켓 예매 사이트 중 가장 대중적으로, 전체 공연티켓유통시장의 70% 점유율을 차지하고 있다.</p>
+        <summary id="sm"><b>인터파크 티켓</b></summary>
+        <p id="pSt">티켓 예매 사이트 중 가장 대중적으로, 전체 공연티켓유통시장의 70% 점유율을 차지하고 있다.<br><br>
+            기능 ★★★★★<br>
+            디자인 ★★<br>
+            콘텐츠 ★★★★★<br>
+        </p>
             <details>
                 <summary>장점</summary>
-                <p id="pSt">티켓 예매 사이트 중 가장 대중적으로, 취급하는 상품 종류가 가장 많음<br>
-                    콘서트, 뮤지컬, 연극 등 공연 외에도 레저(캠핑, 휴양림, 골프, 크루즈)상품 등을 취급한다.</p>
-                    <p id="pSt">예매대기 기능, 취소 후 재예매 기능 등 티켓 예매 유저가 원하는 기능을 제공한다.</p>
+                <p id="pSt">티켓 예매 사이트 중 가장 대중적으로, 취급하는 상품 종류가 가장 많다.<br>
+                    콘서트, 뮤지컬, 연극 등 공연 외에도 레저(캠핑, 휴양림, 골프, 크루즈)상품 등을 취급한다.
+                   <br><br>예매대기 기능, 취소 후 재예매 기능 등 티켓 예매 유저가 원하는 기능을 제공한다.
+                   <br><br>playDB 사이트와 연계되어 아티스트 정보를 제공하고, 좋아하는 아티스트의 공연 정보 알림을 받을 수 있다.
+                <br><br>오른쪽 메뉴바에서 최근 사용자가 방문한 페이지를 확인할 수 있다.</p>
             </details>
             <details>
                 <summary>단점</summary>
-                <p id="pSt">메인 화면에 정보량이 많아 디자인이 깔끔하지 못하다.<br>
+                <p id="pSt">메인 화면에 정보량이 많아 디자인이 깔끔하지 못하다.<br><br>
                     사이트에 익숙치 않을 경우 원하는 메뉴를 찾기 힘들수 있다.</p>
             </details>
     </details>
     </div>
-    <hr>
+    <br><br><br>
+    
 
     <div><p>
     <a href="javascript:load('http://ticket.yes24.com/New/Main.aspx?Gcode=009_201')"><img src="img/flogo.png" title="클릭시 새창에서 이동"></a>
-    </p>
-    <iframe src="http://ticket.yes24.com/New/Main.aspx?Gcode=009_201" name="lower" width="1800" height="400" frameborder="0"></iframe>
+    </p><hr>
+    <iframe src="http://ticket.yes24.com/New/Main.aspx?Gcode=009_201" name="lower" width="1800" height="500" frameborder="0"></iframe>
     <details>
-        <summary><b>YES24</b></summary>
-        <p id="pSt">인터넷 서점 YES24에서 운영하는 티켓예매 사이트이다.</p>
+        <summary id="sm"><b>YES24</b></summary>
+        <p id="pSt">인터넷 서점 YES24에서 운영하는 티켓예매 사이트이다.<br><br>
+            기능 ★★★<br>
+            디자인 ★★★★★<br>
+            콘텐츠 ★★★★<br>
+        </p>
             <details>
                 <summary>장점</summary>
                 <p id="pSt">디자인이 깔끔하고 직관적이다.<br>
-                    메인 화면에서 할인 상품의 할인율, 티켓 오픈 시간 등을 한 눈에 들어오게 표현한다.
+                    메인 화면에서 할인 상품의 할인율, 티켓 오픈 시간 등을 한 눈에 들어오게 표현한다.<br><br>
+                    사용자의 동작에 따라 반응하는 애니메이션이 잘 구현되어있다.<br><br>
+                    결제수단 변경 기능을 지원한다.
                     </p>
-                    <p id="pSt">예매대기 기능, 취소 후 재예매 기능 등 티켓 예매 유저가 원하는 기능을 제공한다.</p>
+        
             </details>
             <details>
                 <summary>단점</summary>
-                <p id="pSt">메인 화면에 정보량이 많아 디자인이 깔끔하지 못하다.<br>
-                    사이트에 익숙치 않을 경우 원하는 메뉴를 찾기 힘들수 있다.</p>
+                <p id="pSt">
+                예매에 많은 인원이 몰릴 경우 자체 알고리즘에 따라 ip를 차단하는데 이 기준이 명확하지 않아 불편하다.<br><br>
+                차단 당할 시 대기 메시지를 띄우는데 해제 시점을 알려주지 않는다.
+
+             </p>
             </details>
     </details>
     </div>
+    <br><br><br>
 
-    <hr>
+    
     <div><p>    
     <a href="javascript:load('https://ticket.melon.com/main/index.htm')"><img src="img/멜론logo.png" title="클릭시 새창에서 이동"></a>
-    </p>
-    <iframe src="https://ticket.melon.com/main/index.htm" name="lower" width="1800" height="400" frameborder="0"></iframe>
+    </p><hr>
+    <iframe src="https://ticket.melon.com/main/index.htm" name="lower" width="1800" height="500" frameborder="0"></iframe>
     <details>
-        <summary><b>Melon 티켓</b></summary>
-        <p id="pSt">카카오엔터테인먼트가 인수한 음원사이트 멜론을 기반으로 한 티켓 판매 사이트이다.</p>
+        <summary id="sm"><b>Melon 티켓</b></summary>
+        <p id="pSt">카카오엔터테인먼트가 인수한 음원사이트 멜론을 기반으로 한 티켓 판매 사이트이다.<br><br>
+            기능 ★★★★<br>
+            디자인 ★★★★<br>
+            콘텐츠 ★★★★<br>
+        </p>
             <details>
                 <summary>장점</summary>
-                <p id="pSt">서버가 안정적이라 많은 인원이 몰리는 아이돌 콘서트 예매는 거의 멜론티켓에서 진행한다.<br>
-                    자세한 예매대기 순번을 보여준다.</p>
-                    <p id="pSt">예매대기 기능, 취소 후 재예매 기능 등 티켓 예매 유저가 원하는 기능을 제공한다.</p>
+                <p id="pSt">화면 구성이 깔끔하다.<br><br>
+                    서버가 안정적이라 많은 인원이 몰리는 아이돌 콘서트 예매는 거의 멜론티켓에서 진행한다.<br>
+                    <br>자세한 예매대기 순번을 보여준다.
+                    <br><br>모기업과 연계하여 카카오티비에서 공연 티저를 공개하거나, 공연에 출연하는 아티스트의 곡을 멜론에서 들을 수 있게 하는 등 다양한 콘텐츠 기능을 제공한다.
+                    <br><br>결제수단 변경 기능을 지원한다.
+                    </p>
             </details>
             <details>
                 <summary>단점</summary>
-                <p id="pSt">메인 화면에 정보량이 많아 디자인이 깔끔하지 못하다.<br>
-                    사이트에 익숙치 않을 경우 원하는 메뉴를 찾기 힘들수 있다.</p>
+                <p id="pSt">타 사이트 대비 취급하는 공연의 종류가 적은 편이다.<br><br>
+                    멜론 아이디나 카카오 계정으로만 이용할 수 있다.</p>
             </details>
     </details>
     </div>
+    <br><br><br>
 
+    <div><p>
+        <table border="1">
+            <caption style="color:aquamarine; background-color: black;">총 별점은?</caption>
+            <thead style="background-color: black; color: aquamarine;">
+            <tr><td></td><td>인터파크 티켓</td><td>YES24 티켓</td><td>Melon 티켓</td></tr>
+            </thead>
+            <tbody>
+                <tr><td>기능</td><td>★★★★★</td><td>★★★</td><td>★★★★</td></tr>
+                <tr><td>디자인</td><td>★★</td><td>★★★★★</td><td>★★★★</td></tr>
+                <tr><td>콘텐츠</td><td>★★★★★</td><td>★★★★</td><td>★★★★</td></tr>
+            </tbody>
+        </table>
+    </p></div>
 
     <button id="fixed" onclick="window.scrollTo({top:location - menuHeight, behavior:'smooth'});" 
     style="background-color:transparent; border-radius: 10px;">TOP</button>
 </body>
 </html>
+
+<!--onclick="window.scrollTo({top:location - menuHeight, behavior:'smooth'});"-->
