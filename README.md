@@ -1,2 +1,2 @@
 # web
- HTML, CSS
+ HTML, CSS, javascript
