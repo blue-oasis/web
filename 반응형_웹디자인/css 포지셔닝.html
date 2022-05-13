@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 포지셔닝</title>
+    <style>
+        .container {
+            border: 2px solid blue;
+            width: 1200px;
+            margin: auto;
+        }
+        header {
+            border: 2px solid red;
+            height: 150px;
+            line-height: 150px;
+            text-align: center;
+        }
+        .inner section{
+            border: 2px solid green;
+            padding: 20px;
+            width: 400px;
+            height: 400px;
+            float: left;
+            box-sizing: border-box;
+        }
+        footer {
+            border: 5px solid orange;
+            height: 100px;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Heder</header>
+        <div class="inner">
+            <section>section1</section>
+            <section>section2</section>
+            <section>section3</section>
+        </div>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
