@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 테이블 스타일 실습</title>
+    <style>
+        table{
+            width: 600px;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        tr, td {
+            border-bottom: 1px solid rgb(200, 204, 207);
+            text-align: center;
+            padding: 5px;
+        }
+        th {
+            background-color: rgb(125, 173, 93);
+            color: #fff;
+
+        }
+        .green {
+            background-color: rgb(13, 165, 82);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Clean Topia male medical pricing</caption>
+        <tr>
+            <th>Item</th>
+            <th>General charge</th>
+            <th>Royal rate</th>
+        </tr>
+        <tr>
+            <td>A shirt</td>
+            <td>2,000</td>
+            <td>1,800</td>
+        </tr>
+        <tr>
+            <td>Shirt</td>
+            <td>2,600</td>
+            <td>4000</td>
+        </tr>
+        <tr>
+            <td>suit top</td>
+            <td>3,300</td>
+            <td>5,200</td>
+        </tr>
+        <tr>
+            <td>clothing / Vestments</td>
+            <td>1,300</td>
+            <td>2,600</td>
+        </tr>
+        <tr>
+            <td class="green" colspan="3">Cleantopia Customer Center : 080-000-0000 / Hours: 9:00 am to 6:00 pm</td>
+    </table>
+</body>
+</html>
