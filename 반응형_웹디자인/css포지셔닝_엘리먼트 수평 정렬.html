@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>엘리먼트 수평 정렬하기</title>
+
+    <style>
+        .container {
+            border: 2px solid blue;
+            width: 1200px;
+            margin: auto;
+            box-sizing: border-box;
+        }
+        header {
+            border: 2px solid red;
+            height: 150px;
+            line-height: 150px;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .inner section{
+            border: 2px solid green;
+            padding: 20px;
+            width: 400px;
+            height: 200px;
+            float: right;
+            box-sizing: border-box;
+        }
+        footer {
+            border: 2px solid orange;
+            height: 100px;
+            clear: both;
+            margin-top: 5px;
+        }
+        aside{
+            border: 2px solid rgb(218, 122, 122);
+            float: left;
+            height: 550px;
+            width: 300px;
+            padding: 5px;
+        }
+        nav {
+            border: 1px solid black;
+            height: 250px;
+            width: 300px;
+        }
+        .main {
+            clear: both;
+            float: center;
+            height: 250px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>&lt;header&gt;</header>
+        
+        <aside><nav>&lt;nav&gt;</nav>&lt;aside&gt;</aside>
+            
+            <div class="inner">
+            <section>&lt;section1&gt;</section>
+            <section>&lt;section2&gt;</section>
+            </div>
+        
+       
+        <footer>&lt;footer&gt;
+        </footer>
+    </div>
+</body>
+</html>
