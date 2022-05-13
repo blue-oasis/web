@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 테이블 스타일</title>
+    <style>
+        table{
+            width: 600px;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        tr, td {
+            border-bottom: 1px solid lightslategrey;
+            text-align: center;
+            padding: 5px;
+        }
+        th {
+            background-color: gray;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Room name</th>
+            <th>Hours of use</th>
+            <th>fee</th>
+        </tr>
+        <tr>
+            <td>standard room</td>
+            <td>2:00pm - 10:00am</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>party room</td>
+            <td>2:00pm - 10:00am</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>couples room</td>
+            <td>2:00pm - 10:00am</td>
+            <td>$400</td>
+        </tr>
+    </table>
+</body>
+</html>
