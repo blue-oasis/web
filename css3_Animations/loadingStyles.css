@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: skyblue;
+}
+
+.loading {
+    width: 400px;
+    padding: 100px 0 10px 0;
+    font-size: 3em;
+    color: white;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+.dot-one {
+    animation-name: dot_one;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes dot_one{
+    0% {opacity: 0;}
+    25% {opacity: 0%;}
+    35% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+.dot-two {
+    animation-name: dot_two;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes dot_two{
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    35% {opacity: 0;}
+    90% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+.dot-three {
+    animation-name: dot_three;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes dot_three{
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    55% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.bouncing_ball {
+    width: 4rem;
+    height: 12rem;
+    position: relative;
+    margin: auto;
+}
+
+.ball { /*포지션 relative-absolute 부모자식 관계*/
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    /* 0% {top: 0;}
+    100%{top: 8rem;} */
+    0% {top: 0; animation-timing-function: ease-in;} /* 자기자신 0/부모 0포지션 */
+    34% {transform: scale(1, 1);} /* 짜부효과 */
+    35% {top: 8rem; transform: scale(1.2, 0.8); animation-timing-function: ease-out;}
+    45% {transform: scale(1, 1);}
+    100% {top: 0;}
+}
