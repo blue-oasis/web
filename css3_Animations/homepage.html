@@ -24,11 +24,11 @@
     <script>
         window.onscroll = () => {
             let nav = document.querySelector('nav');
-            if(window.pageXOffset > 0){
-                nav.classList.add('stikcy');
+            if(window.pageYOffset > 0){
+                nav.classList.add('sticky'); //조건 만족시 stikcy 이벤트 더하기
             }
             else{
-                nav.classList.remove('stikcy');
+                nav.classList.remove('sticky');
             }
         }
     </script>
