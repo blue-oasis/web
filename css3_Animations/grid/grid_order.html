@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <style>
+        .parent {
+            border: 5px solid #000;
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: auto auto auto;
+        }
+
+        .parent div {
+            text-align: center;
+            font-size: 30px;
+            border: 1px solid #000;
+            padding: 5px;
+            background-color: lightblue;
+        }
+
+        .parent div:nth-child(1){ order: 6;}
+        .parent div:nth-child(2){ order: 5;}
+        .parent div:nth-child(3){ order: 4;}
+        .parent div:nth-child(4){ order: 3;}
+        .parent div:nth-child(5){ order: 2;}
+        .parent div:nth-child(6){ order: 1;}
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+</html>
