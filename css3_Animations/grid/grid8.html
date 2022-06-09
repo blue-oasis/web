@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-area</title>
+    <style>
+         .parent {
+            border: 5px solid rgb(10, 10, 10);
+            height: 300px;
+            background-color: rgb(221, 226, 153);
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto; /*세로 6개*/
+            grid-gap: 10px;
+         }
+
+         .parent div {
+             text-align: center;
+             font-size: 30px;
+             border: 1px solid #000;
+         }
+
+         div .item {
+             background-color: crimson;
+             grid-area: 1 /2/ 5/ 6; /* 가로시작/ 세로시작/ 가로종료/ 세로종료 */
+            /* grid-area: 2/1/span 2/ span 3; 가로시작/세로시작/가로span 2확장 /세로.. */
+         }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div class="item">8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+</body>
+</html>
