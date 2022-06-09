@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-template3</title>
+    <style>
+    .parent {
+        border: 5px solid #000;
+        background-color: khaki;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* repeat(반복횟수, 단위)*/
+        grid-template-rows: auto;
+        grid-template-areas: 'header header header header'
+                            'content content . lnb' /* 빈셀 만들기 . */
+                            'footer footer footer footer';
+    }
+
+    .parent div {
+        text-align: center;
+        font-size: 30px;
+        border: 1px solid #000;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
+    .header {
+        grid-area: header;
+        background-color: yellowgreen;}
+    .content {
+        grid-area: content;
+        background-color: gray;}
+    .lnb {
+        grid-area: lnb;
+        background-color: lightcyan;}
+    .footer {
+        grid-area: footer;
+        background-color: blue;}
+    </style>
+    
+</head>
+<body>
+    <div class="parent">
+        <div class="header">header</div>
+        <div class="content">content</div>
+        <div class="lnb">lnb</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>
