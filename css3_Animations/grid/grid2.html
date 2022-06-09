@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .parent {
+            border: 5px solid #000;
+            width: 900px;
+            height: 300px;
+            background-color: lightgray;
+            display: grid;
+            grid-template-columns: auto auto; /*세로 2개*/
+            justify-items: end; /* 열 안 수평 아이템 배치 */
+            align-items: end; /* 아이템 수직 정렬 */
+        }
+        .parent div {
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+            background-color: darkkhaki;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div>1</div>
+        <div>2</div>
+    </div>
+</body>
+</html>
