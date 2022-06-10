@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>repeat</title>
+    <style>
+        .parent {
+            border: 5px solid #000;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /*1fr 2번반복*/
+            grid-template-columns: 1fr minmax(200px, auto) 1fr; /*2번째 컬럼 최소값 200px 최대값 auto*/
+            grid-template-columns: min-content 1fr 1fr; /*1번째 컬럼이 내용에 맞게 줄어듦*/
+            grid-template-columns: repeat(4, minmax(200px, 300px)); /*컬럼4개 최소값 200, 최대값 300*/
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /*auto-fill 자동 줄바꿈*/
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /*auto-fit 부모 요소 남은 공간 없게 채우기*/
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-flow: row dense; /*배치하지 않은 자식요소 자동 배치*/
+        }
+        .parent div {
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+            border: 1px solid #fff;
+            background-color: yellowgreen;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+        }
+        .item {
+            grid-column: 1/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div>1</div>
+        <div>2</div>
+        <div class="item">3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+</html>
