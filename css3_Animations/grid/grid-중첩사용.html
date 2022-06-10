@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-template-columns</title>
+    <style>
+    .parent {
+        border: 5px solid #333;
+        width: 600px;
+        padding: 10px;
+        background-color: khaki;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 50% 50%; /*너비 50% 컬럼 2개 분할 repeat(2, 50%)과 동일*/
+        grid-template-areas: 'child3 child3';
+        box-sizing: border-box;
+    }
+    .parent div {
+        border-radius: 5px;
+        padding: 10px;
+        background-color: #fff;
+    }
+    .child3 {
+        grid-area: child3;
+        grid-row: 2;
+    }
+    @media (max-width: 768px) {
+        .parent {
+            width: 100%;
+            grid-template-columns: 100%;
+            grid-template-areas: 'child3';
+            box-sizing: border-box;
+        }
+        .child3 {
+            grid-row: 3; /*3번째 행에 배치*/
+        }
+        
+    }
+    </style>
+   
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">hello~i am Coding workers. </div>
+        <div class="child2">java python study html css study lalala</div>
+        <div class="child3">3</div>
+    </div>
+</body>
+</html>
