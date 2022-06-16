@@ -4,10 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import Library from './Chapter_03/Library';
-import Book from './Chapter_03/Book';
-
-import Clock from './Chapter_04/Clock';
+import Clock from './Clock';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
