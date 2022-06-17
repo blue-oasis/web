@@ -4,21 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import Library from './Chapter_03/Library';
-import Book from './Chapter_03/Book';
+import NotificationList from './NotificationList';
 
-import Clock from './Chapter_04/Clock';
-import CommentList from './Chapter_05/CommentList';
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-import NotificationList from './Chapter_06/NotificationList';
-
-//const root = ReactDOM.createRoot(document.getElementById('root'));
-
-ReactDOM.render(
+root.render(
     <React.StrictMode>
         <NotificationList />
-    </React.StrictMode>,
-    document.getElementById('root')
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
