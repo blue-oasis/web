@@ -4,15 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import Library from './Chapter_03/Library';
-import Book from './Chapter_03/Book';
-
-import Clock from './Chapter_04/Clock';
-import CommentList from './Chapter_05/CommentList';
-
-import NotificationList from './Chapter_06/NotificationList';
-
-import ProfileCard from './Chapter_13/ProfileCard';
+import ProfileCard from './ProfileCard';
 
 //const root = ReactDOM.createRoot(document.getElementById('root'));
 
