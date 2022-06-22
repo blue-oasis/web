@@ -12,7 +12,7 @@ import CommentList from './Chapter_05/CommentList';
 
 import NotificationList from './Chapter_06/NotificationList';
 
-import Calculator from './Chapter_12/Calculator';
+import Calculator from './Calculator';
 
 //const root = ReactDOM.createRoot(document.getElementById('root'));
 
