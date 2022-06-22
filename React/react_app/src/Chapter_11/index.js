@@ -4,15 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import Library from './Chapter_03/Library';
-import Book from './Chapter_03/Book';
-
-import Clock from './Chapter_04/Clock';
-import CommentList from './Chapter_05/CommentList';
-
-import NotificationList from './Chapter_06/NotificationList';
-
-import SignUp from './Chapter_11/SignUp';
+import SignUp from './SignUp';
 
 //const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -22,6 +14,7 @@ ReactDOM.render(
     </React.StrictMode>,
     document.getElementById('root')
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
