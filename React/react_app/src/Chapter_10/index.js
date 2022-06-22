@@ -4,17 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import Library from './Chapter_03/Library';
-import Book from './Chapter_03/Book';
-
-import Clock from './Chapter_04/Clock';
-import CommentList from './Chapter_05/CommentList';
-
-import NotificationList from './Chapter_06/NotificationList';
-
-import ConfirmButton2 from './Chapter_08/ConfirmButton2';
-
-import AttendanceBook from './Chapter_10/AttendanceBook';
+import AttendanceBook from './AttendanceBook';
 
 //const root = ReactDOM.createRoot(document.getElementById('root'));
 
